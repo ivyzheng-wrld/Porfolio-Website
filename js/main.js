@@ -75,7 +75,33 @@
 		} , { offset: '85%' } );
 	};
 
+	var scrollToSection = function() {
+    $('.js-scroll-to-section').on('click', function(event) {
+        event.preventDefault();
 
+        var targetSection = $($(this).attr('data-target')); // Use a data attribute to specify the target section
+
+        if (targetSection.length) {
+            $('html, body').animate({
+                scrollTop: targetSection.offset().top
+            }, 500, 'easeInOutExpo');
+        }
+        
+        return false;
+    });
+
+    $(window).scroll(function() {
+        var $win = $(window);
+        if ($win.scrollTop() > 200) {
+            $('.js-top').addClass('active');
+        } else {
+            $('.js-top').removeClass('active');
+        }
+    });
+};
+$(document).ready(function() {
+	scrollToSection();
+});
 
 	var goToTop = function() {
 
@@ -102,6 +128,8 @@
 		});
 	
 	};
+
+	
 
 	var pieChart = function() {
 		$('.chart').easyPieChart({

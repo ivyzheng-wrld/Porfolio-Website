@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #206431;
+  background: #4c7557; /*front pg section background*/
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -287,7 +287,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 100px;
-  color: #206431 !important;
+  color: #4c7557 !important;
 }
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
@@ -338,7 +338,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-bg-dark {
   background: #2F3C4F;
-  background: #206431;
+  background: #4c7557; /*proj section background*/
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
